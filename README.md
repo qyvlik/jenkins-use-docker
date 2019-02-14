@@ -13,5 +13,5 @@ Use docker run jenkins, and call docker other api in jenkins.
 ```
 DOCKER_PATH=/usr/local/bin/docker
 LIBLTDL_PATH=/usr/lib/x86_64-linux-gnu/libltdl.so.7
-DOCKER_VOLUMES=~/dockr-volumes/
+DOCKER_VOLUMES=~/docker-volumes/
 ```
