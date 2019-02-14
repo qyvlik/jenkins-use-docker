@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  jenkins-use-docker:
+    build: .
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
+      - /var/run/docker.sock:/var/run/docker.sock
+      - $(which docker):/usr/bin/docker
+      - /usr/lib/x86_64-linux-gnu/libltdl.so.7:/usr/lib/x86_64-linux-gnu/libltdl.so.7
+      - ~/.docker/:/root/.docker
+      - /var/jenkins_home
+    restart: always
+    ports:
+      - "9090:8080"
+      - "50000:50000"
