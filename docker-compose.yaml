@@ -11,7 +11,7 @@ services:
       - ${LIBLTDL_PATH}:/usr/lib/x86_64-linux-gnu/libltdl.so.7
       # for docker login
       - ~/.docker/:/root/.docker
-      - ${DOCKER_VOLUMES}/var/jenkins_home:/var/jenkins_home
+      - ${JENKINS_VOLUMES}:/var/jenkins_home
     ports:
       - "9090:8080"
       - "50000:50000"
