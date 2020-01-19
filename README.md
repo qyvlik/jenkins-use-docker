@@ -1,6 +1,6 @@
 # jenkins-use-docker
 
-Use docker run jenkins, and call docker other api in jenkins.
+Use docker run jenkins, and call docker shell api in jenkins.
 
 ## startup
 
@@ -8,7 +8,7 @@ Use docker run jenkins, and call docker other api in jenkins.
 2. modify the `DOCKER_PATH`, `LIBLTDL_PATH`, `DOCKER_VOLUMES` to match your machine.
 3. to build: `docker-compose build`
 4. to start up: `docker-compose up -d`
-5. to fix `Permission denied`, `chown -R NOT_ROOT_USER:NOT_ROOT_USER ${DOCKER_VOLUMES}` to change the `DOCKER_VOLUMES` owner.
+5. to fix `Permission denied`, `chown -R NOT_ROOT_USER:NOT_ROOT_USER ${JENKINS_VOLUMES}` to change the `JENKINS_VOLUMES` owner.
 
 ### example of .env for ubuntu
 
