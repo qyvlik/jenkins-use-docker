@@ -2,6 +2,10 @@
 
 Use docker run jenkins, and call docker shell api in jenkins.
 
+## docker image
+
+[jenkins-use-docker](https://hub.docker.com/r/qyvlik/jenkins-use-docker)
+
 ## startup
 
 1. copy the [.env.example](./.env.example) to [.env](./.env)
