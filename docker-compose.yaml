@@ -14,5 +14,4 @@ services:
       - ${DOCKER_VOLUMES}/var/jenkins_home:/var/jenkins_home
     ports:
       - "9090:8080"
-      - "50000:50000"
     restart: always
